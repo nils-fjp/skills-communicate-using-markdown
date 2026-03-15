@@ -13,5 +13,9 @@
 Convert an image or video from dark mode to light mode using [ffmpeg](https://www.ffmpeg.org)
 
 ```bash
+# Video example
 ffmpeg -i input.mp4 -vf "negate,hue=h=180,eq=contrast=1.2:saturation=1.1" output.mp4
+
+# Image example
+ffmpeg -i input.png -vf "negate,hue=h=180,eq=contrast=1.2:saturation=1.1" output.png
 ```
